@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Inteligente</title>
+
+    <style>
+        th, td { border: 1px solid black; padding: 12px; text-align: justify;}
+        th { background-color: #f2f2f231;}
+        tr:nth-child(even) {background-color: #f9f9f9;}
+    </style>
+
+</head>
+<body style="font-family: Arial;">
+    
+    <h1>AWOS TIENDA</h1>
+    <input type="text" id="buscarProducto" placeholder="Buscar un articulo...">
+    <button onclick="busqueda()">Buscar</button>
+    <button onclick="limpiar()">Limpiar busqueda</button>
+
+    <p id="estado"></p>
+
+    <table style="border-collapse: collapse; width: 100%; margin-top: 20px 0;">
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>DESCRIPCION</th>
+                <th>CATEGORIA</th>
+                <th>PRECIO</th>
+                <th>STOCK</th>
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+    </table>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
